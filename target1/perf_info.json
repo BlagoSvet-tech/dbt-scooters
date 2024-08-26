@@ -1,46 +1,40 @@
 {
-    "path_count": 127,
-    "parsed_path_count": 127,
-    "static_analysis_path_count": 2,
-    "static_analysis_parsed_path_count": 2,
+    "path_count": 128,
+    "parsed_path_count": 1,
+    "static_analysis_path_count": 1,
+    "static_analysis_parsed_path_count": 1,
     "is_partial_parse_enabled": true,
     "is_static_analysis_enabled": true,
-    "read_files_elapsed": 0.01275950763374567,
-    "load_macros_elapsed": 0.4309760141186416,
-    "parse_project_elapsed": 0.007242222782224417,
-    "patch_sources_elapsed": 9.657349437475204e-06,
-    "process_manifest_elapsed": 0.015219893772155046,
-    "load_all_elapsed": 0.4846654077991843,
+    "read_files_elapsed": 0.013086880091577768,
+    "load_macros_elapsed": 0.00037481077015399933,
+    "parse_project_elapsed": 0.0035000331699848175,
+    "patch_sources_elapsed": 4.8140063881874084e-06,
+    "process_manifest_elapsed": 0.0016900599002838135,
+    "load_all_elapsed": 0.03754646284505725,
     "projects": [
         {
             "project_name": "dbt_scooters",
-            "elapsed": 0.005554972682148218,
+            "elapsed": 0.0034631178714334965,
             "parsers": [
                 {
                     "parser": "model",
-                    "elapsed": 0.0047263880260288715,
-                    "parsed_path_count": 2
+                    "elapsed": 0.00345638208091259,
+                    "parsed_path_count": 1
                 }
             ],
-            "parsed_path_count": 2
+            "parsed_path_count": 1
         },
         {
             "project_name": "dbt_postgres",
-            "elapsed": 0.0007971101440489292,
+            "elapsed": 0,
             "parsers": [],
             "parsed_path_count": 0
         },
         {
             "project_name": "dbt",
-            "elapsed": 0.0008387304842472076,
-            "parsers": [
-                {
-                    "parser": "doc",
-                    "elapsed": 0.00018089916557073593,
-                    "parsed_path_count": 1
-                }
-            ],
-            "parsed_path_count": 1
+            "elapsed": 0,
+            "parsers": [],
+            "parsed_path_count": 0
         }
     ]
 }

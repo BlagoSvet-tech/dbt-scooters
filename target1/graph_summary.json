@@ -1,1 +1,1 @@
-{"_invocation_id": "e98e551e-cf51-4af2-b416-f7a9cfc0446f", "linked": {"0": {"name": "model.dbt_scooters.trips_stat_daily", "type": "model"}, "1": {"name": "model.dbt_scooters.trips_stat", "type": "model"}}}
+{"_invocation_id": "ae664d7d-795e-47a6-92c9-16f55f42a5bc", "linked": {"0": {"name": "model.dbt_scooters.trips_stat_daily", "type": "model"}, "1": {"name": "model.dbt_scooters.trips_stat", "type": "model"}, "2": {"name": "model.dbt_scooters.trips_stat_age", "type": "model"}}}
