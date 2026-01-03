@@ -1,15 +1,46 @@
-Welcome to your new dbt project!
+Название проекта - dbt_scooters
 
-### Using the starter project
+Проект использует **dbt** и управляется через пакетный менеджер **uv**.
 
-Try running the following commands:
+## Стек
+- dbt
+- Python
+- uv (управление зависимостями)
+
+## Структура проекта
+Проект соответствует стандартной структуре dbt:
+- `models/` — модели и SQL-трансформации
+- `seeds/` — статические данные
+- `tests/` — кастомные тесты
+- `macros/` — макросы dbt
+
+## Установка и окружение
+
+Установка зависимостей:
+```bash
+uv sync
+```
+
+Активация виртуального окружения:
+```bash
+uv shell
+```
+
+Проверить конфигурацию:
+- dbt debug
+
+Запуск всех моделей:
 - dbt run
+
+Запуск тестов:
 - dbt test
 
+Запуск конкретной модели:
+- dbt run --select model_name
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+Запуск моделей + тестов:
+- dbt build
+
+Просмотр документации:
+- dbt docs generate
+- dbt docs serve
