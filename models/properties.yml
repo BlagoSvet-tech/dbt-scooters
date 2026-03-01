@@ -54,4 +54,13 @@ models:
   - name: events_clean
     description: "Events without duplicates"
     config:
-      materialized: incremental
+      materialized: "incremental"
+
+  - name: revenue_daily
+    description: "Revenue by date"
+    config:
+      materialized: "incremental"
+      incremental_strategy: "merge"
+      unique_key: ["date"]
+      on_schema_change: "append_new_columns"
+      full_refresh: false
