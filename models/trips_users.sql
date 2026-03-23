@@ -1,6 +1,7 @@
 select tp.*,
        u.sex,
-       extract(year from tp.started_at) - extract(year from u.birth_date) as age
+       extract(year from tp.started_at) - extract(year from u.birth_date) as age,
+       {{ updated_at() }}
 from {{ref("trips_prep")}} tp 
 left join {{source("scooters_raw", "users")}} u on tp.user_id = u.id 
 {% if is_incremental() %}
